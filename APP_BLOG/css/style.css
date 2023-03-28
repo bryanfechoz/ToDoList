@@ -1,0 +1,127 @@
+body {
+    background-color: #546E7A;
+    color: #FFCA28;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+nav {
+    background-color: #6596619e;
+    /* border: solid 2px #ffffff; */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    padding: 10px 5px 10px 5px;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #FFCA28;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.connected {
+    color: wheat;
+}
+
+.afficherListe {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-login {
+    margin-top: 10px;
+}
+
+.form-logout {
+    margin-top: 10px;
+}
+
+/* Style du tableau la liste des Users*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #728791;
+}
+
+table tr:hover {
+    background-color: #6596619e;
+}
+
+/* Animations pour un hover progressif */
+table tr {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Met l'opacité de la cellule qui contient le password à 0:*/ 
+table tr:nth-child(even) td:last-child,
+table tr:nth-child(odd) td:last-child {
+    opacity: 0;
+}
+/* Met l'opacité de la cellule qui contient le password à 1:*/ 
+table tr:nth-child(even):hover td:last-child,
+table tr:nth-child(odd):hover td:last-child {
+    opacity: 1;
+}
+
+
+table th {
+    animation: slide-in-left 0.5s ease-in-out forwards;
+}
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
